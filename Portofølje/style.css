@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: url("HBilder/Bakgrunn_PC.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url(Segoe_UI.ttf);
+}
+
+.banner .navigasjon{
+    width: 100%;
+    margin: auto;
+    padding: 0 35;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    list-style-type: none;
+    background-color: rgba(32, 140, 129, 0.4);
+    transition-duration: 1s;
+}
+.banner .navigasjon:hover{
+    background-color: rgb(32, 140, 129);
+}
+
+#logo{
+    width: 40%;
+    cursor: pointer;
+    margin-left: 7rem;
+    float: inline-start;
+}
+
+#kontakt{
+    cursor: pointer;
+    margin-right: 7rem;
+    float: inline-start;
+}
+
+.navigasjon ul li{
+list-style: none;
+display: inline-block;
+margin: 0 40px;
+margin-right: 8rem;
+}
+
+.navigasjon ul li a{
+    text-decoration: none;
+    color: #FFF4F0;
+    text-transform: uppercase;
+}
+
+.p1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#F2784B;
+    margin-right: 4rem;
+    text-transform: 200%;
+    font-size: 7em;
+    position: absolute;
+    margin-left: 100px;
+}
+.presentation #utvikler{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: #FFF4F0;
+font-size: 2em;
+}
+
