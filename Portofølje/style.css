@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
 }
@@ -8,7 +8,7 @@ body{
     background-image: url("HBilder/Bakgrunn_PC.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: absolute;
 }
 
 @font-face {
@@ -17,6 +17,8 @@ body{
 }
 
 .banner .navigasjon{
+    position: fixed;
+    z-index: 10;
     width: 100%;
     margin: auto;
     padding: 0 35;
@@ -57,10 +59,6 @@ margin-right: 8rem;
     text-transform: uppercase;
 }
 
-.p1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -69,11 +67,83 @@ h1{
     text-transform: 200%;
     font-size: 7em;
     position: absolute;
-    margin-left: 100px;
+    margin-left: 200px;
+    margin-top: 150px;
 }
 .presentation #utvikler{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 color: #FFF4F0;
-font-size: 2em;
+font-size: 3rem;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 270px;
+}
+
+.presentation .heading-foto #pic-presentation {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    margin-left: 1050px;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 20%;    
+}
+
+.tekst {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #FFF4F0;
+    position: absolute;
+    margin-left: 205px;
+    margin-top: 400px;
+}
+
+
+.container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+}
+.container h2{
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 7em;
+} */
+@media only screen and (min-width:430px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    body{
+        padding: 4rem;
+        background-image: url("HBilder/Bakgrunn_PC.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* position: absolute; */
+    }
+    
+    .navigasjon{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navigasjon .p1{
+        list-style: none;
+        display: flex;
+    }
+    .navigasjon .p1 li{
+        padding: 0 4rem 0 4rem;
+    }
+    .navigasjon .p1 li a{
+        font-size: 28px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    
+    
+
 }
 
