@@ -1,4 +1,4 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
 }
@@ -9,14 +9,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-}
-
-@font-face {
-    font-family: 'Segoe UI';
-    src: url(Segoe_UI.ttf);
+    background-color: #353535;
 }
 
 .banner .navigasjon{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: fixed;
     z-index: 10;
     width: 100%;
@@ -70,6 +67,8 @@ h1{
     margin-left: 200px;
     margin-top: 150px;
 }
+
+
 .presentation #utvikler{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 color: #FFF4F0;
@@ -77,17 +76,6 @@ font-size: 3rem;
     position: absolute;
     margin-left: 300px;
     margin-top: 270px;
-}
-
-.presentation .heading-foto #pic-presentation {
-    height: 100%;
-    width: auto;
-    position: absolute;
-    margin-left: 1050px;
-    margin-top: 100px;
-    padding: 20px;
-    background-color: black;
-    border-radius: 20%;    
 }
 
 .tekst {
@@ -98,37 +86,72 @@ font-size: 3rem;
     margin-top: 400px;
 }
 
-
-.container{
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr;
+.presentation .heading-foto #pic-presentation {
+    height: auto;
+    width: 18%;
+    margin-left: 1050px;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 20%;
 }
-.container h2{
-    position: absolute;
+
+
+.Om_meg_container{
+display: flex;
+justify-self: left;
+margin: 420px 0 72px 200px;
+color: #F2784B;
+
+}
+
+.Om_meg_container h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 7em;
-} */
-@media only screen and (min-width:430px){
+    font-size: 5em;
+}
+
+.Om_meg_container .tekst{
+margin-bottom: 0;
+margin-left: 0;
+}
+
+.Om_meg_container .bilde{
+    margin: 10px 280px;
+    height: auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 20%;
+}
+
+
+
+
+ /*
+@media only screen and (min-width:430px){}
     * {
         margin: 0;
         padding: 0;
     }
-    
     
     body{
         padding: 4rem;
         background-image: url("HBilder/Bakgrunn_PC.svg");
         background-repeat: no-repeat;
         background-size: cover;
-        /* position: absolute; */
     }
     
     .navigasjon{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        list-style-type: none;
+        background-color: rgba(32, 140, 129, 0.4);
+        transition-duration: 1s;
     }
+    
+.banner .navigasjon:hover{
+    background-color: rgb(32, 140, 129);
+}
     .navigasjon .p1{
         list-style: none;
         display: flex;
@@ -141,9 +164,4 @@ grid-template-rows: 1fr 1fr;
         color: #fff;
         text-decoration: none;
     }
-
-    
-    
-
-}
-
+*/
